@@ -1,29 +1,23 @@
 @font-face {
-    font-family: 'Rubik-Light';
+    font-family: 'Roboto-Black';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 900;
     font-display: swap;
-    src: url(../fonts/Rubik-Light.ttf) format('truetype');
+    src: url(../fonts/Roboto-Black.ttf) format('truetype');
 }
+
 @font-face {
-    font-family: 'Rubik-Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(../fonts/Rubik-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Rubik-Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url(../fonts/Rubik-Medium.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Rubik-Bold';
+    font-family: 'Roboto-Bold';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url(../fonts/Rubik-Medium.ttf) format('truetype');
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
 }
-  
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
