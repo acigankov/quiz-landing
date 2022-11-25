@@ -2,7 +2,30 @@ body {
     background-image: url('/assets/img/main-bg.png');
 }
 
+.container{
+    @media (max-width: $md) {
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+}
+
+
 .section-padding {
     padding-left: 60px;
     padding-right: 60px;
+
+    @media (max-width: $xl) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media (max-width: $lg) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media (max-width: $sm) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
