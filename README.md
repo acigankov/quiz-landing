@@ -1,5 +1,4 @@
-# gulp-empty
-Пустой проект Gulp. Моя сборка
+# quiz-landig
 
 - скачать репозитарий, или сделать ```git clone```
 - запустить ```npm install```
