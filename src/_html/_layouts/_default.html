@@ -7,6 +7,7 @@
     <meta name="description" content="{{ meta_description }}">
     <link rel="stylesheet" type="text/css" href="/assets/css/styles.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/swiper/swiper-bundle.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
@@ -21,6 +22,7 @@
     {% include "_html/_includes/_header.html" %}
 
     <main>
+        {% include "_html/_includes/_section-gallery.html" %}
         {% block content %}
             <p>Тут типа какой то блок content</p>
         {% endblock %}
@@ -29,6 +31,7 @@
     {% include "_html/_includes/_footer.html" %}
     
     <script src="/libs/jquery.min.js"></script>
+    <script src="/libs/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/js/custom.min.js"></script>
 </body>
 </html>
