@@ -1,5 +1,5 @@
 const hamburger = document.getElementById('hamburger');
-const menu = document.querySelector('.mobile-menu__list');
+const menu = document.querySelector('.mobile-menu');
 
 //отслеживание клика по бургеру
 hamburger.addEventListener('click', function (event) {
