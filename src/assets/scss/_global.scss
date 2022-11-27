@@ -6,9 +6,8 @@ body {
     @media (max-width: $md) {
     padding: 0 !important;
     max-width: 100% !important;
+    }
 }
-}
-
 
 .section-padding {
     padding-left: 60px;
@@ -32,4 +31,36 @@ body {
 
 .section-white {
     background-color: #fff;
+}
+
+.black-heading {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    @media (max-width: $md) {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    &__title {
+        @include flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        background-color: $color-dark;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        color: #fff;
+        @include font('Roboto-Regular', normal, 20px, $accent-color);
+        padding: 10px;
+        text-transform: uppercase;
+
+        @media (max-width: $lg) {
+            font-size: 16px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 14px;
+        }
+    }
 }
