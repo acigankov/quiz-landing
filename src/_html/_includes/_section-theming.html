@@ -1,3 +1,63 @@
+{% set items = [
+  {
+      title: 'Общие темы',
+      src: '/assets/img/theming/1.webp',
+      description: 'Общеразвивающие игры «обо всём на свете»'
+  },
+  {
+      title: 'Harry Potter',
+      src: '/assets/img/theming/harry.svg',
+      description: 'Квизы по вселенной Гарри Поттер с разным уровнем сложности от начинающих до экспертов – отличная возможность разнообразить день рождения для поклонников творчества Джоан Роулинг'
+  },
+  {
+      title: 'Marvel',
+      src: '/assets/img/theming/marvel.svg',
+      description: 'Квизы по вселенной Marvel от базовых фильмов, до расширенной версии с учётом сериалов и телешоу для фанатов супергеройского кино'
+  },
+  {
+      title: 'Gвоздь 18+ ',
+      src: '/assets/img/theming/adult.svg',
+      description: '«Жаркие» квизы на запретные темы – прекрасный выбор для мальчишников / девичников или посиделок с друзьями'
+  },
+  {
+      title: 'Друзья',
+      src: '/assets/img/theming/friends.svg',
+      description: 'Игры по супер популярному сериалу эпохи 1990-2000х'
+  },
+  {
+      title: 'Игра престолов',
+      src: '/assets/img/theming/game_thrones.svg',
+      description: 'Квизы для поклонников ярчайшего фэнтэзи сериала последних лет'
+  },
+  {
+      title: '1980-1990е',
+      src: '/assets/img/theming/90x.png',
+      description: 'Тематические игры эпохи конца СССР и начала современной российской истории, прекрасная возможность вспомнить молодость для людей 35+'
+  },
+  {
+      title: 'Секс в большом городе',
+      src: '/assets/img/theming/sex.svg',
+      description: 'Квизы в стиле гламур для поклонников культового сериала 1990-2000х'
+  },
+  {
+      title: 'Мультфильмы',
+      src: '/assets/img/theming/mult.png',
+      description: 'Тематические квизы для детских праздников по популярным мультсериалам и полнометражным лентам'
+  },
+  {
+      title: 'Отраслевые квизы',
+      src: '/assets/img/theming/worker.png',
+      description: 'Квизы для корпоративных Заказчиков на заданную тему для конференций, выставок и отраслевых мероприятий'
+  },
+  {
+      title: 'Что-то другое?',
+      src: '/assets/img/theming/lamp.png',
+      description: 'Оставьте заявку, и мы сделаем квиз по мотивам любого произведения или по интересующей теме'
+  }
+
+] %}
+
+
 <section class="section-theming">
   <div class="container">
     <div class="section-padding section-white">
@@ -6,6 +66,18 @@
           Тематики
         </h1>
       </div>
+
+      <div class="theming-list">
+        {% for item in items %}
+        <div class="theming-item">
+          <div class="theming-item__image">
+            <img src="{{ item.src }}" alt="quiz">
+          </div>
+          <div class="theming-item__title">{{ item.title }}</div>
+          <div class="theming-item__description">{{ item.description }}</div>
+        </div><!-- /.theming-item-->
+        {% endfor %}
+      </div><!-- /.theming-list -->
 
     </div>
   </div><!-- /.section-padding section-white -->
