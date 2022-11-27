@@ -1,0 +1,29 @@
+.theming-heading {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  @media (max-width: $md) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $accent-color;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #fff;
+    @include font('Roboto-Bold', normal, 20px, $color-dark);
+    padding: 10px 30px;
+    text-transform: uppercase;
+
+    @media (max-width: $lg) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $md) {
+      font-size: 14px;
+    }
+  }
+}
