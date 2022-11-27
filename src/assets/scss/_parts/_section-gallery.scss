@@ -1,5 +1,6 @@
 .swiper {
     height: auto;
+    z-index: 0 !important;
 
     &-button-next, &-button-prev {
         color: $color-dark !important;
@@ -7,15 +8,21 @@
         @media(max-width: $lg) {
             display: none !important;
         }
+
+        @media (hover) {
+            &:hover {
+                opacity:0.7;
+            }
+        }
     }
 
     .swiper-button-next, .swiper-rtl .swiper-button-prev {
-        right: 29%;
+        right: 25%;
         left: auto;
     }
 
     .swiper-button-prev, .swiper-rtl .swiper-button-next {
-        left: 29%;;
+        left: 25%;;
         right: auto;
     }
 
@@ -81,13 +88,50 @@
             padding-left: 25px;
             overflow: hidden;
 
-                span {
-                    @include font('Roboto-Bold', normal, 14px, #fff);
-                    letter-spacing: 0.3px;
-                }
+            span {
+                @include font('Roboto-Bold', normal, 14px, #fff);
+                letter-spacing: 0.3px;
             }
         }
+    }
+}
 
+.image-full {
 
+    &__wrapper {
 
+        &.open {
+            @include flex;
+        }
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left:0;
+        padding: 10%;
+        display: none;
+        background-color: rgba(black, 0.9);
+
+        .swiper-slide-description {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__image {
+        width: 85%;
+        margin: 0 auto;
+    }
 }
