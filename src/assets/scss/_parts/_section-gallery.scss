@@ -1,20 +1,45 @@
 .swiper {
     height: auto;
 
-    &-slide {
-        transform: $transition;
-        
+    &-button-next, &-button-prev {
+        color: $color-dark !important;
+
+        @media(max-width: $lg) {
+            display: none !important;
+        }
+    }
+
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 29%;
+        left: auto;
+    }
+
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 29%;;
+        right: auto;
     }
 
     &-slide:not(.swiper-slide-active) {
         opacity: 0.1;
-        transform: $transition;
+        transition: $transition;
     }
 
     &-slide-active {
-        transform: $transition;
+        transition: $transition;
         animation: changeActiveSlide;
         animation-duration: 2s;
+        cursor: pointer;
+
+        @media(hover) {
+            &:hover {
+                transform: scale(1.1);
+
+                .swiper-slide-description {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
     }
 
     @keyframes changeActiveSlide {
@@ -25,4 +50,44 @@
             opacity: 1;
         }
     }
+
+
+    &-slide-description {
+        transition: $transition;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, rgba(black, 1), rgba(black, 0));
+        width: 100%;
+        padding: 10px;
+        visibility: hidden;
+        opacity: 0;
+        padding-bottom: 20px;
+                
+        //на меленьких всегда показываем описание слайда
+        @media(max-width: $lg) {
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        &__item {
+            @include flex(center, flex-start);
+
+            background: linear-gradient($accent-color,$accent-color);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            max-width: 200px;
+            padding-left: 25px;
+            overflow: hidden;
+
+                span {
+                    @include font('Roboto-Bold', normal, 14px, #fff);
+                    letter-spacing: 0.3px;
+                }
+            }
+        }
+
+
+
 }

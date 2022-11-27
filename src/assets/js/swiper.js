@@ -3,11 +3,11 @@ const swiper = new Swiper('.swiper', {
     // direction: 'vertical',
     loop: true,
     speed: 800,
-    autoplay: false,
+    autoplay: true,
     //If true, then active slide will be centered, not always on the left side.
     centeredSlides: true,
     centeredSlidesBounds: true,
-    slidesPerView: 3,
+    slidesPerView: 1,
 
     // Navigation arrows
     navigation: {
@@ -15,16 +15,8 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        // when window width is >= 320px
-        320: {
-          slidesPerView: 2,
-        },
-        // when window width is >= 480px
-        480: {
-          slidesPerView: 3,
-        },
-        // when window width is >= 640px
-        640: {
+        // when window width is >= 992px
+        992: {
           slidesPerView: 3,
         }
       }
