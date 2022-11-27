@@ -2,7 +2,9 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
     speed: 300,
-    autoplay: true,
+    autoplay: {
+        delay: 2000,
+    },
     grabCursor: false,
     //If true, then active slide will be centered, not always on the left side.
     centeredSlides: true,
