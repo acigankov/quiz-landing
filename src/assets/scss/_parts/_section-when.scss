@@ -1,0 +1,40 @@
+.when {
+
+    .section-white {
+        position: relative;
+        padding-top: 45px;
+        z-index: 1;
+        height: 800px;
+    }
+    
+    &-wrapper {
+        position: absolute;
+        width: 59%;
+        height: 625px;
+        right: 0;
+        background-color: $accent-color;
+        border-bottom-left-radius: 40px;
+        border-top-left-radius: 40px;
+        z-index: -1;
+
+        @media(max-width: $xxl) {
+            width: 60%;
+        }
+
+        @media(max-width: $xl) {
+            width: 62%;
+        }
+    }
+
+    &-title {
+        text-align: center;
+        @include font ('Roboto-Black', normal, 68px, $color-dark);
+        text-transform: uppercase;
+        padding-top: 60px;
+
+        span {
+            color: $accent-color;
+            padding-right: 20px;
+        }
+    }
+}
