@@ -50,7 +50,7 @@
         }
 
         &__title {
-            @include font('Roboto-Black', normal, 68px, $color-dark);
+            @include font('Roboto-Black', normal, 3.778rem, $color-dark);
             text-transform: uppercase;
             padding-bottom: 60px;
 
@@ -90,11 +90,13 @@
         &__image {
             margin-bottom: 30px;
         }
+
+        &__text {
+            @include font('Roboto-Regular', normal, 0.889rem, $color-dark);
+        }
     }
 
     &-list {
-
-
         &__item{
             @include flex(center, flex-start);
             transition: $transition;
@@ -131,7 +133,7 @@
             padding: 5px;
             background-color: transparent;
             border-radius: 4px;
-            @include font('Roboto-Bold', normal, 18px, $color-dark);
+            @include font('Roboto-Bold', normal, 1.111rem, $color-dark);
             text-transform: uppercase;
             cursor: pointer;
 
@@ -140,15 +142,12 @@
                     opacity: 0.7;
                 }
             }
-
-            @media (max-width: $lg) {
-                font-size: 20px;
-            }
         }
 
         &__description {
-            @include font('Roboto-Regular', normal, 14px, $color-dark);
+            @include font('Roboto-Regular', normal, 16px, $color-dark);
             padding-top: 10px;
+            padding-bottom: 20px;
             display: none;
 
             @media (max-width: $lg) {

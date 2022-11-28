@@ -76,16 +76,8 @@
     }
 
     &__phone {
-        @include font('Roboto-Black', normal, 24px, $color-dark);
+        @include font('Roboto-Black', normal, 1.333rem, $color-dark);
         transition: $transition;
-
-        @media (max-width: $xl) {
-            font-size: 20px;
-        }
-
-        @media (max-width: $lg) {
-            font-size: 16px;
-        }
 
         @media (hover ) {
 
@@ -98,7 +90,7 @@
 
 .header-call {
     border: 2px solid $accent-color;
-    @include font('Roboto-Black', normal, 24px, $color-dark);
+    @include font('Roboto-Black', normal, 1.333rem, $color-dark);
     text-transform: uppercase;
     margin-right: 15px;
     padding: 10px 20px;
@@ -198,18 +190,6 @@
     padding-bottom: 20px;
 
     h1 {
-        @include font('Roboto-Black', normal, 32px, #fff);
-
-        @media (max-width: $xl) {
-            font-size: 28px;
-        }
-        
-        @media (max-width: $lg) {
-            font-size: 20px;
-        }
-
-        @media (max-width: $md) {
-            font-size: 18px;
-        }
+        @include font('Roboto-Black', normal, 1.778rem, #fff);
     }
 }

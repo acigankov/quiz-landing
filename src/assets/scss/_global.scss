@@ -1,3 +1,15 @@
+html {
+    font-size: 18px;
+
+    @media (max-width: $xl) {
+        font-size: 16px;
+    }
+
+    @media (max-width: $md) {
+        font-size: 14px;
+    }
+}
+
 body {
     background-image: url('/assets/img/main-bg.png');
 }
@@ -51,7 +63,7 @@ body {
         border-top-left-radius: 25px;
         border-bottom-right-radius: 25px;
         color: #fff;
-        @include font('Roboto-Regular', normal, 20px, $accent-color);
+        @include font('Roboto-Regular', normal, 1.333rem, $accent-color);
         padding: 10px;
         text-transform: uppercase;
 
