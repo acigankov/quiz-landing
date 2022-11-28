@@ -131,17 +131,18 @@
             <div class="structure-list">
                 {% for item in items %}
                 <div class="structure-item {% if (loop.index == 1) %} active {% endif %}">
-                    
-                    <div class="structure-item__icon">
-                        <img src="{{ item.src }}" alt="icon">
+                    <div class="item-row">   
+                        <div class="structure-item__icon">
+                            <img src="{{ item.src }}" alt="icon">
+                        </div>
+                        <div class="structure-item__title">{{ item.title }}</div>
+                        <div class="structure-item__stickers">
+                            {% for sticker in item.stickers %}
+                            <img src="{{ sticker.src }}" alt="icon" data-title="{{ sticker.title }}"  title="{{ sticker.title }}">
+                            {% endfor %}
+                        </div>
                     </div>
-                    <div class="structure-item__title">{{ item.title }}</div>
-                    <div class="structure-item__stickers">
-                        {% for sticker in item.stickers %}
-                        <img src="{{ sticker.src }}" alt="icon" data-title="{{ sticker.title }}"  title="{{ sticker.title }}">
-                        {% endfor %}
-                    </div>
-                    
+                    <p class="structure-item__description">{{ item.description }}</p>
                 </div>
                 {% endfor %}
             </div><!-- /.structure-list -->
