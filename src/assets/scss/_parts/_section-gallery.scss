@@ -1,137 +1,139 @@
-.swiper {
-    height: auto;
-    z-index: 0 !important;
+.section-gallery {
+    .swiper {
+        height: auto;
+        z-index: 0 !important;
 
-    &-button-next, &-button-prev {
-        color: $color-dark !important;
+        &-button-next, &-button-prev {
+            color: $color-dark !important;
 
-        @media(max-width: $lg) {
-            display: none !important;
-        }
+            @media(max-width: $lg) {
+                display: none !important;
+            }
 
-        @media (hover) {
-            &:hover {
-                opacity:0.7;
+            @media (hover) {
+                &:hover {
+                    opacity:0.7;
+                }
             }
         }
-    }
 
-    .swiper-button-next, .swiper-rtl .swiper-button-prev {
-        right: 25%;
-        left: auto;
-    }
+        .swiper-button-next, .swiper-rtl .swiper-button-prev {
+            right: 25%;
+            left: auto;
+        }
 
-    .swiper-button-prev, .swiper-rtl .swiper-button-next {
-        left: 25%;;
-        right: auto;
-    }
+        .swiper-button-prev, .swiper-rtl .swiper-button-next {
+            left: 25%;;
+            right: auto;
+        }
 
-    &-slide:not(.swiper-slide-active) {
-        opacity: 0.1;
-        transition: $transition;
-    }
+        &-slide:not(.swiper-slide-active) {
+            opacity: 0.1;
+            transition: $transition;
+        }
 
-    &-slide-active {
-        transition: $transition;
-        animation: changeActiveSlide;
-        animation-duration: 2s;
-        cursor: pointer;
+        &-slide-active {
+            transition: $transition;
+            animation: changeActiveSlide;
+            animation-duration: 2s;
+            cursor: pointer;
 
-        @media(hover) {
-            &:hover {
-                transform: scale(1.1);
+            @media(hover) {
+                &:hover {
+                    transform: scale(1.1);
 
-                .swiper-slide-description {
-                    opacity: 1;
-                    visibility: visible;
+                    .swiper-slide-description {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+
+        @keyframes changeActiveSlide {
+            from {
+                opacity: 0.1;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+
+        &-slide-description {
+            transition: $transition;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to top, rgba(black, 1), rgba(black, 0));
+            width: 100%;
+            padding: 10px;
+            visibility: hidden;
+            opacity: 0;
+            padding-bottom: 20px;
+                    
+            //на меленьких всегда показываем описание слайда
+            @media(max-width: $lg) {
+                opacity: 1;
+                visibility: visible;
+            }
+
+
+            &__item {
+                @include flex(center, flex-start);
+
+                background: linear-gradient($accent-color,$accent-color);
+                background-repeat: no-repeat;
+                background-size: 20px;
+                max-width: 200px;
+                padding-left: 25px;
+                overflow: hidden;
+
+                span {
+                    @include font('Roboto-Bold', normal, 14px, #fff);
+                    letter-spacing: 0.3px;
                 }
             }
         }
     }
 
-    @keyframes changeActiveSlide {
-        from {
-            opacity: 0.1;
-        }
-        to {
-            opacity: 1;
-        }
-    }
+    .image-full {
 
+        &__wrapper {
 
-    &-slide-description {
-        transition: $transition;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background: linear-gradient(to top, rgba(black, 1), rgba(black, 0));
-        width: 100%;
-        padding: 10px;
-        visibility: hidden;
-        opacity: 0;
-        padding-bottom: 20px;
-                
-        //на меленьких всегда показываем описание слайда
-        @media(max-width: $lg) {
-            opacity: 1;
-            visibility: visible;
-        }
+            &.open {
+                @include flex;
+            }
 
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left:0;
+            padding: 10%;
+            display: none;
+            background-color: rgba(black, 0.9);
 
-        &__item {
-            @include flex(center, flex-start);
-
-            background: linear-gradient($accent-color,$accent-color);
-            background-repeat: no-repeat;
-            background-size: 20px;
-            max-width: 200px;
-            padding-left: 25px;
-            overflow: hidden;
-
-            span {
-                @include font('Roboto-Bold', normal, 14px, #fff);
-                letter-spacing: 0.3px;
+            .swiper-slide-description {
+                visibility: visible;
+                opacity: 1;
             }
         }
-    }
-}
 
-.image-full {
+        &__close {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            cursor: pointer;
 
-    &__wrapper {
-
-        &.open {
-            @include flex;
+            &:hover {
+                opacity: 0.7;
+            }
         }
 
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left:0;
-        padding: 10%;
-        display: none;
-        background-color: rgba(black, 0.9);
-
-        .swiper-slide-description {
-            visibility: visible;
-            opacity: 1;
+        &__image {
+            width: 85%;
+            margin: 0 auto;
         }
-    }
-
-    &__close {
-        position: absolute;
-        top: 2%;
-        right: 2%;
-        cursor: pointer;
-
-        &:hover {
-            opacity: 0.7;
-        }
-    }
-
-    &__image {
-        width: 85%;
-        margin: 0 auto;
     }
 }

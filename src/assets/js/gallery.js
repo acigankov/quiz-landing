@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.gallery-slider', {
     // Optional parameters
     loop: true,
     speed: 300,
