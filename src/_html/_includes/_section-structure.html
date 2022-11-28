@@ -136,12 +136,12 @@
                         <img src="{{ item.src }}" alt="icon">
                     </div>
                     <div class="structure-item__title">{{ item.title }}</div>
+                    <div class="structure-item__stickers">
                         {% for sticker in item.stickers %}
                         <img src="{{ sticker.src }}" alt="icon" data-title="{{ sticker.title }}"  title="{{ sticker.title }}">
                         {% endfor %}
                     </div>
                     
-
                 </div>
                 {% endfor %}
             </div><!-- /.structure-list -->
