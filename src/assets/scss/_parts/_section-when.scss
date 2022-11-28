@@ -50,7 +50,7 @@
         }
 
         &__title {
-            @include font('Roboto-Black', normal, 3.778rem, $color-dark);
+            @include font('Roboto-Black', normal, 2.778rem, $color-dark);
             text-transform: uppercase;
             padding-bottom: 60px;
 
@@ -62,7 +62,6 @@
                 display: none;
                 @media (max-width: $lg) {
                     display: flex;
-                    font-size: 28px;
                     text-align: center;
                     justify-content: center;
                     padding: 20px 0;
