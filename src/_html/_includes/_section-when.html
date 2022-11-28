@@ -74,8 +74,10 @@
                     <ul class="when-list">
                         {% for item in items %}
                         <li class="when-list__item {% if (loop.index == 1) %}active{% endif %}" data-description="{{ item.description }}">
-                            <img src="{{ item.src }}" alt="{{ item.title }}" class="when-list__image">
-                            <span class="when-list__title" >{{ item.title }}</span>
+                            <div class="item-wrapper">
+                                <img src="{{ item.src }}" alt="{{ item.title }}" class="when-list__image">
+                                <span class="when-list__title" >{{ item.title }}</span>
+                            </div>
                             <p class="when-list__description">
                                 {{ item.description }}
                             </p>
