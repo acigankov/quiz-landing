@@ -4,7 +4,6 @@ html {
     @media (max-width: $xl) {
         font-size: 16px;
     }
-
 }
 
 body {
@@ -44,6 +43,14 @@ body {
 
 .section-gray {
     background-color: $color-gray;
+}
+
+.section-yellow {
+    background-color: $accent-color;
+}
+
+.section-bordered {
+    border-radius: 20px;
 }
 
 .black-heading {
