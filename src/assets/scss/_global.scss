@@ -5,9 +5,6 @@ html {
         font-size: 16px;
     }
 
-    @media (max-width: $md) {
-        font-size: 14px;
-    }
 }
 
 body {
@@ -69,6 +66,7 @@ body {
         color: #fff;
         @include font('Roboto-Regular', normal, 1.333rem, $accent-color);
         padding: 10px;
+        text-align: center;
         text-transform: uppercase;
 
         @media (max-width: $lg) {
