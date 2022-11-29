@@ -138,8 +138,12 @@
                         <div class="structure-item__title">{{ item.title }}</div>
                         <div class="structure-item__stickers">
                             {% for sticker in item.stickers %}
-                            <img src="{{ sticker.src }}" alt="icon" data-title="{{ sticker.title }}"  title="{{ sticker.title }}">
+                            <div class="sticker-image">
+                                <img src="{{ sticker.src }}" alt="icon" data-title="{{ sticker.title }}"  class="sticker-image__image">
+                                <div class="sticker-image__description"></div>
+                            </div>
                             {% endfor %}
+                            
                         </div>
                     </div>
                     <p class="structure-item__description">{{ item.description }}</p>
