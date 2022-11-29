@@ -24,8 +24,7 @@ stickers.forEach(function(item)  {
         const descriptionEl = this.querySelector('.sticker-image__description');
         
         descriptionEl.textContent = title;
-        console.log(title);
-        console.log(descriptionEl);
+
     });
 });
 

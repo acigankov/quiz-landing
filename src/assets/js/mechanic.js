@@ -3,5 +3,5 @@ const el = document.getElementById('mechanic-list');
 
 toggler.addEventListener('click', function(event) {
     el.classList.toggle('open');
-    
 });
+
