@@ -45,8 +45,6 @@
         
         .description {
 
-            
-        
             &-list {
                 @include font('Roboto-Bold', normal, 1rem, $color-dark);
                 transition: $transition;
