@@ -50,7 +50,8 @@
                 transition: $transition;
                 position: relative;
                 visibility: hidden;
-                height: 0;
+                height: auto;
+                max-height: 0;
                 opacity: 0;
                 overflow: hidden;
 
@@ -67,7 +68,7 @@
 
                 &.open {
                     visibility: visible;
-                    height: auto;
+                    max-height: 20000px;
                     opacity: 1;
 
                 }
