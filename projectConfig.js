@@ -21,6 +21,9 @@ export default
       ],
       "libs" : [
           "/libs/**/*.*"
+      ],
+      "docs" : [
+          "/docs/**/*.*"
       ]
     },
     "dist": {
@@ -30,7 +33,8 @@ export default
       "script": "/assets/js/",
       "image": "/assets/img/",
       "font": "/assets/fonts/",
-      "libs": "/libs/"
+      "libs": "/libs/",
+      "docs": "/docs/",
     }
   }
 }

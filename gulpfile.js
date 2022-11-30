@@ -246,6 +246,11 @@ function copyLibs() {
     return gulp.src(path.src.libs)
         .pipe(gulp.dest(path.dist.libs));
 }
+//copy libs in dist
+function copyDocs() {
+    return gulp.src(path.src.docs)
+        .pipe(gulp.dest(path.dist.docs));
+}
 
 //Слежение за файлами
 function watch(){
@@ -263,6 +268,7 @@ const fontsConvert = gulp.series(otf2ttf, ttf2woff2Converter, ttf2woffConverter)
 export default gulp.series(
     gulp.parallel(clean),
     gulp.parallel(copyLibs),
+    gulp.parallel(copyDocs),
     gulp.parallel(njk, scss, script, image, font),
     gulp.parallel(browsersync, watch),
     imageMin,

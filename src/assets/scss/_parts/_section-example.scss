@@ -44,7 +44,7 @@
     padding: 0 40px 30px;
   }
 
-  &-button {
+  &-button, &-button:visited {
     @include flex;
     width: 100%;
     max-width: 250px;
@@ -61,7 +61,7 @@
   }
 
   &-more {
-    @include font('Roboto-Black', normal, 1.1rem, $accent-color);
+    @include font('Roboto-Black', normal, 1.1rem, $accent-color !important);
     border-bottom: 2px solid $accent-color;
     text-align: center;
     cursor: pointer;
@@ -72,7 +72,49 @@
 
   }
 
+  &-list {
+    transition: $transition;
+    padding-bottom: 0;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
 
+    &.open {
+      padding-bottom: 45px;
+      max-height: 2000px;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 
+  &-item {
+    padding: 20px;
 
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      @include font('Roboto-Bold', normal, 1rem, $color-dark);
+      padding-bottom: 20px;
+    }
+
+    &__list {
+      list-style-position: inside;
+      @include font('Roboto-Bold', normal, 1rem, $color-dark);
+      
+      li {
+        color: $accent-color;
+        
+        span {
+          @include font('Roboto-Regular', normal, 1rem, $color-dark);
+          padding-left: 5px;
+        }
+      }
+
+    }
+
+  }
 }
