@@ -82,10 +82,14 @@
     visibility: hidden;
 
     &.open {
-      padding-bottom: 45px;
+      padding-bottom: 60px;
       max-height: 2000px;
       opacity: 1;
       visibility: visible;
+
+      @media (max-width: $sm) {
+        padding-bottom: 40px;
+      }
     }
   }
 

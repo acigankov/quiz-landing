@@ -1,0 +1,73 @@
+.team {
+
+    .section-black {
+        padding: 60px;
+
+        @media (max-width: $lg) {
+            padding: 30px;
+        }
+    }
+
+    &-heading {
+        @include font('Roboto-Black', normal, 2.778rem, $accent-color);
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 40px;
+
+    }
+
+    &-description {
+        text-align: center;
+        @include font('Roboto-Bold', normal, 1rem, $accent-color);
+        padding-bottom: 60px;
+
+        @media (max-width: $md) {
+            padding-bottom: 40px;
+        }
+    }
+
+    &-item {
+        @include flex(center, space-between);
+        flex-wrap: wrap;
+
+        &__image {
+            width: 30%;
+            text-align: center;
+
+            @media (max-width: $lg) {
+                width: 100%;
+                padding-bottom: 40px;
+            }
+
+
+            &>img {
+                max-width: 250px;
+                border-radius: 50%;
+                box-shadow: 1px 1px 20px rgba($accent-color, 0.3);
+
+                @media (max-width: $xl) {
+                    max-width: 200px;
+                }
+
+                @media (max-width: $lg) {
+                    max-width: 200px;
+                }
+            }            
+        }
+
+        &__quote {
+            width: 67%;
+            padding-left: 30px;
+            @include font('Roboto-Regular', normal, 0.8rem, $accent-color);
+            background: linear-gradient($accent-color, $accent-color);
+            background-repeat: no-repeat;
+            background-size: 20px 100%;
+            background-position: left center;
+
+            @media (max-width: $lg) {
+                width: 100%;
+            }
+
+        }
+    }
+}
