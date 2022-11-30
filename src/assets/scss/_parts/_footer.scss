@@ -1,0 +1,56 @@
+.footer {
+
+    .section-padding{
+        padding-bottom: 40px;
+    }
+    
+
+    &-heading {
+        @include font('Roboto-Bold', normal, 1.1rem, $color-dark);
+        text-align: center;
+        padding: 40px 0 20px;
+    }
+
+    &-address {
+        @include font('Roboto-Bold', normal, 1.1rem, $color-dark);
+        text-align: center;
+        padding-bottom: 80px;
+
+        a:hover {
+            opacity: 0.7
+        }
+    }
+
+    &-row {
+        @include flex(center, space-between);
+        flex-wrap: wrap;
+
+
+    }
+
+    &-text{
+        @include font('Roboto-Regular', normal, 1rem, $color-dark);
+        width: 70%;
+
+        @media (max-width: $lg) {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        &__item:not(:last-child) {
+            padding-bottom: 20px;
+        }
+       
+    }
+
+     &-logo {
+        @media (max-width: $lg) {
+            text-align: center;
+            width: 100%;
+
+            &>img {
+                max-width: 100px;
+            }
+        }
+    }
+}
