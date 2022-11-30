@@ -50,6 +50,10 @@
             @include font('Roboto-Bold', normal, 1.1rem, $accent-color);
             cursor: pointer;
             border-bottom: 2px solid $accent-color;
+
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 

@@ -1,0 +1,78 @@
+.example {
+
+  &-row {
+    @include flex(center, space-between);
+    padding-bottom: 45px;
+
+    @media (max-width: $md) {
+      padding-bottom: 30px;
+    }
+
+    .col-left {
+      @include flex;
+      flex-direction: column;
+      width: 60%;
+      background-color: $color-gray;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 60px 40px 40px;
+
+      @media (max-width: $lg) {
+        padding: 40px 30px 30px;
+        width: 100%;
+      }
+    }
+
+    .col-right {
+      padding: 40px;
+
+      @media (max-width: $lg) {
+        display: none;
+      }
+    }
+  }
+
+  &-heading {
+    @include font('Roboto-Black', normal, 2.778rem, $accent-color);
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+
+  &-subheading {
+    @include font('Roboto-regular', normal, 1rem, $color-dark);
+    padding: 0 40px 30px;
+  }
+
+  &-button {
+    @include flex;
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    @include font('Roboto-Black', normal, 1.178rem, $accent-color);
+    background-color: $color-dark;
+    margin: 0 auto 30px;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &-more {
+    @include font('Roboto-Black', normal, 1.1rem, $accent-color);
+    border-bottom: 2px solid $accent-color;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+  }
+
+
+
+
+}
