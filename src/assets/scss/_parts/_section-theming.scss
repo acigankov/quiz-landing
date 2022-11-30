@@ -51,7 +51,9 @@
     &:hover {
       background-color: $accent-color;
       .theming-item__description {
-        font-size: 14px;
+        max-height: 200px;
+        visibility: visible;
+        opacity: 1;
       }
 
     }
@@ -67,8 +69,13 @@
 
     &__description {
       transition: $transition;
-      @include font('Roboto-Regular', normal, 0, $color-dark);
+      @include font('Roboto-Regular', normal, 0.8rem, $color-dark);
       padding: 10px;
+      height: auto;
+      min-height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      opacity: 0;
     }
 
   }
