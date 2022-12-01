@@ -1,82 +1,85 @@
-.theming-heading {
-  padding-top: 60px;
-  padding-bottom: 40px;
+.theming {
 
-  @media (max-width: $md) {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
+  &-heading {
+    padding-top: 60px;
+    padding-bottom: 40px;
 
-  &__title {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: $accent-color;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    color: #fff;
-    @include font('Roboto-Bold', normal, 1.333rem, $color-dark);
-    padding: 10px 30px;
-    text-transform: uppercase;
-  }
-}
-
-.theming-list {
-  @include flex(initial, flex-start);
-  flex-wrap: wrap;
-  gap: 15px 10px;
-  
-  .theming-item {
-    @include flex;
-    flex-direction: column;
-    width: calc(100% / 4 - 10px);
-    text-align: center;
-    padding: 10px;
-    height: 250px;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background-color: $color-gray;
-
-    @media (max-width: $xl) {
-      width: calc(100% / 3 - 10px);
-    }
-
-    @media (max-width: $lg) {
-      width: calc(100% / 2 - 10px);
-    }
-
-    @media (max-width: $sm) {
-       width: calc(100% / 1 - 10px);;
-    }
-
-    &:hover {
-      background-color: $accent-color;
-      .theming-item__description {
-        max-height: 200px;
-        visibility: visible;
-        opacity: 1;
-      }
-
-    }
-
-    &__image {
-      width: 60%;
+    @media (max-width: $md) {
+      padding-top: 30px;
+      padding-bottom: 20px;
     }
 
     &__title {
-      @include font('Roboto-Regular', normal, 20px, $color-dark);
-      padding: 10px 0;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $accent-color;
+      border-top-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      color: #fff;
+      @include font('Roboto-Bold', normal, 1.333rem, $color-dark);
+      padding: 10px 30px;
+      text-transform: uppercase;
     }
+  }
 
-    &__description {
-      transition: $transition;
-      @include font('Roboto-Regular', normal, 0.8rem, $color-dark);
+  &-list {
+    @include flex(initial, flex-start);
+    flex-wrap: wrap;
+    gap: 15px 10px;
+    
+    .theming-item {
+      @include flex;
+      flex-direction: column;
+      width: calc(100% / 4 - 10px);
+      text-align: center;
       padding: 10px;
-      height: auto;
-      min-height: 0;
-      overflow: hidden;
-      visibility: hidden;
-      opacity: 0;
-    }
+      height: 250px;
+      border-top-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      background-color: $color-gray;
 
+      @media (max-width: $xl) {
+        width: calc(100% / 3 - 10px);
+      }
+
+      @media (max-width: $lg) {
+        width: calc(100% / 2 - 10px);
+      }
+
+      @media (max-width: $sm) {
+        width: calc(100% / 1 - 10px);;
+      }
+
+      &:hover {
+        background-color: $accent-color;
+        .theming-item__description {
+          max-height: 200px;
+          visibility: visible;
+          opacity: 1;
+        }
+
+      }
+
+      &__image {
+        width: 60%;
+      }
+
+      &__title {
+        @include font('Roboto-Regular', normal, 20px, $color-dark);
+        padding: 10px 0;
+      }
+
+      &__description {
+        transition: $transition;
+        @include font('Roboto-Regular', normal, 0.8rem, $color-dark);
+        padding: 10px;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        opacity: 0;
+      }
+
+    }
   }
 }

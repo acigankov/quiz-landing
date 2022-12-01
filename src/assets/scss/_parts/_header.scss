@@ -150,6 +150,10 @@
 
     &__link {
         @include font('Roboto-Bold', normal, 20px, $color-dark);
+
+        &:hover {
+            opacity: 0.7;
+        }
     }
 
     & > hr {
