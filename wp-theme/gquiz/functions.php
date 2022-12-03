@@ -138,14 +138,14 @@ add_action( 'widgets_init', 'gquiz_widgets_init' );
  * Enqueue scripts and styles.
  */
 function gquiz_scripts() {
-    wp_enqueue_style( 'gquiz-main', get_template_directory_uri() . '/assets/css/styles.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'gquiz-bootstrapGrid', get_template_directory_uri() . '/libs/bootstrap-grid.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'gquiz-swiper', get_template_directory_uri() . '/libs/swiper/swiper-bundle.min.css', array(), _S_VERSION );
+    wp_enqueue_style( 'gquiz-main', get_template_directory_uri() . '/assets/css/styles.min.css', array(), _S_VERSION );
 	wp_style_add_data( 'gquiz-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'gquiz-navigation', get_template_directory_uri() . '/libs/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'gquiz-scripts', get_template_directory_uri() . '/assets/js/custom.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'gquiz-swiper', get_template_directory_uri() . '/libs/swiper/swiper-bundle.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'gquiz-scripts', get_template_directory_uri() . '/assets/js/custom.min.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -179,4 +179,10 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+/**
+ * Post type Gallery.
+ */
+require get_template_directory() . '/post-types/post-gallery.php';
+
+
 

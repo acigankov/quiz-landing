@@ -9,91 +9,39 @@
                 </h1>
             </div>
 
+            <?php
+            $thisPostId = get_the_ID();
+            $posts = get_posts(array(
+                'numberposts' => 100,
+                'post_type' => 'gallery',
+                'orderby' => 'id',
+                'order' => 'ASC',
+                'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+            ));
+            ?>
+
+
             <!-- Slider main container -->
             <div class="swiper gallery-slider">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="<?= get_template_directory_uri() ?>/assets/img/gallery/1.webp" alt="slide">
-                        <div class="swiper-slide-description">
-                            <div class="swiper-slide-description__item">
+
+                    <?php foreach ($posts as $post) { setup_postdata($post); ?>
+
+                        <div class="swiper-slide">
+                            <img src="<?= the_field('slide-image');?>" alt="<?= the_field('slide-caption');?>">
+                            <div class="swiper-slide-description">
+                                <div class="swiper-slide-description__item">
                                 <span>
-                                    Гвоздатый квиз по Гарри-Поттеру 1
-                                </span> 
-                            </div>
-                        </div><!-- / .swiper-slide-description -->
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="<?= get_template_directory_uri() ?>/assets/img/gallery/2.webp" alt="slide">
-                        <div class="swiper-slide-description">
-                            <div class="swiper-slide-description__item">
-                                <span>
-                                    Гвоздатый квиз по Гарри-Поттеру 2
-                                </span> 
-                            </div>
-                        </div><!-- / .swiper-slide-description -->
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="<?= get_template_directory_uri() ?>/assets/img/gallery/3.webp" alt="slide">
-                        <div class="swiper-slide-description">
-                            <div class="swiper-slide-description__item">
-                                <span>
-                                    Гвоздатый квиз по Гарри-Поттеру 3
-                                </span> 
-                            </div>
-                        </div><!-- / .swiper-slide-description -->
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="<?= get_template_directory_uri() ?>/assets/img/gallery/4.webp" alt="slide">
-                        <div class="swiper-slide-description">
-                            <div class="swiper-slide-description__item">
-                                <span>
-                                    Гвоздатый квиз по Гарри-Поттеру 4
-                                </span> 
-                            </div>
-                        </div><!-- / .swiper-slide-description -->
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="<?= get_template_directory_uri() ?>/assets/img/gallery/5.webp" alt="slide">
-                        <div class="swiper-slide-description">
-                            <div class="swiper-slide-description__item">
-                                <span>
-                                    Гвоздатый квиз по Гарри-Поттеру 5
-                                </span> 
-                            </div>
-                        </div><!-- / .swiper-slide-description -->
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="<?= get_template_directory_uri() ?>/assets/img/gallery/6.webp" alt="slide">
-                        <div class="swiper-slide-description">
-                            <div class="swiper-slide-description__item">
-                                <span>
-                                    Гвоздатый квиз по Гарри-Поттеру 6
-                                </span> 
-                            </div>
-                        </div><!-- / .swiper-slide-description -->
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="<?= get_template_directory_uri() ?>/assets/img/gallery/7.webp" alt="slide">
-                        <div class="swiper-slide-description">
-                            <div class="swiper-slide-description__item">
-                                <span>
-                                    Гвоздатый квиз по Гарри-Поттеру 7
-                                </span> 
-                            </div>
-                        </div><!-- / .swiper-slide-description -->
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="<?= get_template_directory_uri() ?>/assets/img/gallery/8.webp" alt="slide">
-                        <div class="swiper-slide-description">
-                            <div class="swiper-slide-description__item">
-                                <span data-image-description>
-                                    Гвоздатый квиз по Гарри-Поттеру 8
-                                </span> 
-                            </div>
-                        </div>
-                    </div><!-- / .swiper-slide -->
+                                    <?= the_field('slide-caption');?>
+                                </span>
+                                </div>
+                            </div><!-- / .swiper-slide-description -->
+                        </div><!-- / .swiper-slide -->
+
+                    <?php } wp_reset_postdata(); // сброс постов ?>
+
                 </div>
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>

@@ -40,5 +40,7 @@
         </div><!-- /.section-white section-padding -->
     </div><!-- /.container -->
 
+    <?php wp_footer(); ?>
+
 
 </footer>
