@@ -1,0 +1,146 @@
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="section-white section-padding">
+            <div class="black-heading"> 
+                <h1 class="black-heading__title">
+                    Цена Гвоздатого квиза формируется из пакета услуг, который Вы заказываете.
+                </h1>
+            </div><!-- /.black-heading -->
+
+            <ul class="pricing-list">
+                <li class="list-item">
+                    <div class="item-row">
+                        <div class="list-item__number">1</div>
+                        <div class="list-item__text">
+                            <p>В основе квиза всегда лежит пакет вопросов на заданную тематику.  Цена начинается от 25.000 рублей</p>
+                            <span class="pricing-more" data-toggler="1">Подробнее</span>
+                        </div>
+                    </div>
+                    <ul class="description-list " data-togglerText="1">
+                        <li class="description-item">
+                        <p class="small-height">
+                            Минимальный пакет – 25 вопросов, распределённых на 5-6 туров. Длительность такой игры составит около 80-90 минут, 
+                            стоимость пакета вопросов и презентационных материалов – от 25.000 рублей за базовые темы, перечисленные выше. 
+                            <a href="#example" class="description-item__link">Пример готового квиза по теме «1980-1990е» приведён в здесь.</a>
+                            Удорожание возможно для квизов Gвоздь 18+, отраслевых квизов (например, про нефтепереработку) и тематических квизов
+                             раздела «Что-то другое?». Уточните стоимость у менеджера.
+                            Чем больше вопросов, тем дороже квиз. Максимальный пакет не ограничен, но мы не рекомендуем делать более 40 вопросов, 
+                            так как подобные игры займут уже 120-180 минут, что будет тяжело для восприятия. Пакет на 40 вопросов и презентационные материалы будет стоить 40.000 рублей за базовые темы с аналогичным удорожанием за специфические.
+                            При этом каждый раз мы делаем новые пакеты вопросов, не копируя бездумно одни и те же готовые игры новым Заказчикам.
+                        </p>
+                        </li>
+                    </ul>
+                </li><!-- /.pricing-list__item -->
+                <li class="list-item">
+                    <div class="item-row">
+                        <div class="list-item__number">2</div>
+                        <div class="list-item__text">
+                            <p>При желании можно заказать дополнительные услуги.</p>
+                            <span class="pricing-more" data-toggler="2">Подробнее</span>
+                        </div>
+                    </div>
+                    <ul class="description-list" data-togglerText="2">
+                        <li class="description-item">
+                            <div class="description-item__image">
+                                <img src="<?= get_template_directory_uri() ?>/assets/img/pricing/microphone.webp" alt="ведущий">
+                            </div>
+                           
+                            <div class="description-item__text">
+                               <p>
+                                <strong> Ведущий </strong><br>
+                                Стоимость ведущего сильно зависит от его квалификации, даты и времени проведения квиза.
+                                Очевидно, что в новогоднюю ночь стоимость ведущего будет в разы выше обычного буднего дня.
+                                В обычный будний день стоимость ведущего начинается от 6.000 рублей за 2 часа работы. При необходимости тематических костюмов стоимость вырастает.
+                               </p> 
+                            </div>
+                            <div class="description-item__price">от 6.000&nbsp;руб.</div>
+                        </li><!-- /.description-item -->
+                        <li class="description-item">
+                            <div class="description-item__image">
+                                <img src="<?= get_template_directory_uri() ?>/assets/img/pricing/km.svg" alt="ведущий">
+                            </div>
+                            <div class="description-item__text">
+                               <p>
+                                <strong> Квиз-мены </strong><br>
+                                Для динамичного проведения квиза необходимы квиз-мены – энергичные ребята и девчонки, которые будут собирать бланки со столов и следить за порядком.
+                                Один квиз-мен обычно сопровождает до 7 команд. Чем больше команд, тем больше квиз-менов нужно.
+                                Стоимость зависит от даты проведения квиза, но, как правило, начинается от 3.000 за 2 часа работы одного квиз-мена. При необходимости тематических костюмов стоимость вырастает.
+                               </p> 
+                            </div>
+                            <div class="description-item__price">от 3.000&nbsp;руб.</div>
+                        </li><!-- /.description-item -->
+                        <li class="description-item">
+                            <div class="description-item__image">
+                                <img src="<?= get_template_directory_uri() ?>/assets/img/pricing/glasses.webp" alt="ведущий">
+                            </div>
+                            <div class="description-item__text">
+                               <p>
+                                <strong> Счётная комиссия </strong><br>
+                                Собранные бланки необходимо проверить, затем проставить баллы и принять апелляции при возникновении. Для этого необходима счётная комиссия.
+                                Один «счетовод» может в разумные сроки проверять бланки до 14 команд. Чем больше команд, тем больше людей нужно на проверку.
+                                Стоимость зависит от даты проведения квиза, но, как правило, начинается от 4.000 за 2 часа работы одного человека.
+                                </p> 
+                            </div>
+                            <div class="description-item__price">от 4.000&nbsp;руб.</div>
+                        </li><!-- /.description-item -->
+                        <li class="description-item">
+                            <div class="description-item__image">
+                                <img src="<?= get_template_directory_uri() ?>/assets/img/pricing/spiderman.webp" alt="ведущий">
+                            </div>
+                            <div class="description-item__text">
+                               <p>
+                                <strong> Косплееры </strong><br>
+                                При проведении тематического квиза особую атмосферу создают косплееры, например, в костюмах героев Гарри Поттера для соответствующего квиза.
+                                Стоимость косплееров очень сильно зависит от даты проведения квиза и качества костюма, обычно начинается от 3.000 за 2 часа работы одного косплеера.
+                                </p> 
+                            </div>
+                            <div class="description-item__price">от 3.000&nbsp;руб.</div>
+                        </li><!-- /.description-item -->
+                        <li class="description-item">
+                            <div class="description-item__image">
+                                <img src="<?= get_template_directory_uri() ?>/assets/img/pricing/drink.webp" alt="ведущий">
+                            </div>
+                            <div class="description-item__text">
+                               <p>
+                                <strong> Банкет / фуршет / аренда площадки </strong><br>
+                                Банкет / фуршет / аренда площадки
+                                Если Вы не знаете где провести квиз, мы можем подобрать для Вас подходящую площадку и обеспечить питанием. 
+                                Здесь вариантов существует очень много, потому невозможно указать какую-то стартовую стоимость. Уточните у менеджера детали.
+                                </p> 
+                            </div>
+                            <div class="description-item__price">Индивидуально</div>
+                        </li><!-- /.description-item -->
+                        <li class="description-item">
+                            <div class="description-item__image">
+                                <img src="<?= get_template_directory_uri() ?>/assets/img/pricing/music.webp" alt="ведущий">
+                            </div>
+                            <div class="description-item__text">
+                               <p>
+                                <strong> Аренда оборудования для квиза </strong><br>
+                                Если Вы выбрали самостоятельно площадку для мероприятия, 
+                                но она не оборудована телевизорами и аудио-аппаратурой, необходимой для квиза, мы можем привезти всё с собой. Уточните детали у менеджера.
+                                </p> 
+                            </div>
+                            <div class="description-item__price">Индивидуально</div>
+                        </li><!-- /.description-item -->
+                        <li class="description-item">
+                            <div class="description-item__image">
+                                <img src="<?= get_template_directory_uri() ?>/assets/img/pricing/flags.webp" alt="ведущий">
+                            </div>
+                            <div class="description-item__text">
+                               <p>
+                                <strong> Дополнительные услуги </strong><br>
+                                Дополнительные услуги
+                                Вам необходимо оформить зал? Подготовить праздничные приглашения? Пригласить фокусников или дрессировщика с ручными животными? 
+                                Всё возможно, просто, скажется на стоимости. 
+                                Сообщите свои пожелания менеджеру, и мы будем рады Вам помочь.
+                                </p> 
+                            </div>
+                            <div class="description-item__price">Индивидуально</div>
+                        </li><!-- /.description-item -->
+                    </ul><!-- /.description-list -->
+                </li><!-- /.pricing-list__item -->
+            </ul><!-- /.pricing-list -->
+        </div>
+    </div>
+</section>

@@ -138,8 +138,7 @@ add_action( 'widgets_init', 'gquiz_widgets_init' );
  * Enqueue scripts and styles.
  */
 function gquiz_scripts() {
-	wp_enqueue_style( 'gquiz-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'gquiz-main', get_template_directory_uri() . '/assets/css/styles.min.css', array(), _S_VERSION );
+    wp_enqueue_style( 'gquiz-main', get_template_directory_uri() . '/assets/css/styles.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'gquiz-bootstrapGrid', get_template_directory_uri() . '/libs/bootstrap-grid.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'gquiz-swiper', get_template_directory_uri() . '/libs/swiper/swiper-bundle.min.css', array(), _S_VERSION );
 	wp_style_add_data( 'gquiz-style', 'rtl', 'replace' );

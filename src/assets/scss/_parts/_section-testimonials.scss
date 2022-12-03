@@ -42,7 +42,7 @@
 
         &__prev {
             left: 20%;
-            background-image: url('/assets/img/slider-prev.webp');
+            background-image: url('../img/slider-prev.webp');
 
             @media (max-width: $lg) {
                 left: 20px;
@@ -51,7 +51,7 @@
 
         &__next {
             right: 20%;
-            background-image: url('/assets/img/slider-next.webp');
+            background-image: url('../img/slider-next.webp');
 
             @media (max-width: $lg) {
                 right: 20px;

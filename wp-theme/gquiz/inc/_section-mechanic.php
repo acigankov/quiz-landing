@@ -1,0 +1,130 @@
+<section class="mechanic" id="mechanic">
+    <div class="container">
+        <div class="section-padding section-white">
+            
+            <h1 class="mechanic-heading">
+                игровая <span>механика</span>
+            </h1><!-- /.mechanic-heading -->
+
+            <span class="mechanic-subheading">
+                Мы разработали увлекательную игровую механику, которая добавляет в квиз ещё больший азарт и накал страстей.
+            </span><!-- /.mechanic-subheading -->
+
+            <div class="mechanic-text">
+                <p>Для её применения Вам необходимо заказать «Квиз под ключ» с нашим ведущим, квиз-менами и счётной комиссией,
+                     чтобы корректно отыграть фишки дополнительных опций.
+                </p>
+                <p>Мы разработали гвоздатые «апы», которые можно применять в зависимости от типа используемых модулей в пакете.
+                     Каждая команда получает комплект наклеек и модернизированные бланки ответов. 
+                </p>
+                <p>Опытный ведущий дополнительно отыгрывает апы по ходу квиза, счётная комиссия корректно учитывает изменённые
+                     баллы, а квиз-мены отслеживают применение игровой системы во время мероприятия.
+                </p>
+                <span class="mechanic-text__more">Подробнее</span>
+            </div><!-- /.mechanic-text -->
+
+            <div class="mechanic-list" id="mechanic-list">
+                <div class="mechanic-item">
+                    <div class="mechanic-item__image">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/mechanic/free.svg" alt="sticker">
+                    </div>
+                    <div class="mechanic-item__text">
+                        <strong>«Халява»: 1 шт. в комплекте.</strong>
+                        <p>Применяется на вопросах до 30 баллов включительно, в тех модулях, где разрешены правилами.
+                            В случае, если команда не знает ответа на вопрос, можно наклеить данную наклейку в соответствующее поле
+                             в бланке ответов, и вопрос будет автоматически засчитан, как правильный.
+                        </p>
+                    </div>
+                </div><!-- /.mechanic-item -->
+                <div class="mechanic-item">
+                    <div class="mechanic-item__image">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/mechanic/bonus.svg" alt="sticker">
+                    </div>
+                    <div class="mechanic-item__text">
+                        <strong>«Бонус»: 1 шт. в комплекте.</strong>
+                        <p>Применяется в конкурсах с вычитанием баллов.
+                            Если команда не уверена в корректности ответа, то вместе с ответом может использовать данную наклейку.
+                             В случае неверного ответа баллы не будут вычитаться.
+                        </p>
+                    </div>
+                </div><!-- /.mechanic-item -->
+                <div class="mechanic-item">
+                    <div class="mechanic-item__image">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/mechanic/x2.svg" alt="sticker">
+                    </div>
+                    <div class="mechanic-item__text">
+                        <strong>«Мультипликатор х2»: 3 шт. в комплекте.</strong>
+                        <p>Применяется в модулях, где разрешены правилами.
+                            Повышает соотношение риск/выгода в модулях.
+                            При использовании в бланке ответов баллы за данный вопрос умножаются на 2. 
+                            В случае если в модуле баллы вычитаются, а команда дала неправильный ответ, 
+                            отрицательные баллы так же кратно умножаются.
+                        </p>
+                    </div>
+                </div><!-- /.mechanic-item -->
+                <div class="mechanic-item">
+                    <div class="mechanic-item__image">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/mechanic/x4.svg" alt="sticker">
+                    </div>
+                    <div class="mechanic-item__text">
+                        <strong>«Мультипликатор х2»: 3 шт. в комплекте.</strong>
+                        <p>«Мультипликатор х4»: 1 шт. в комплекте.
+                            Применяется в модулях, где разрешены правилами.
+                            Очень сильно повышает соотношение риск/выгода в модулях.
+                            При использовании в бланке ответов баллы за данный вопрос умножаются на 4. 
+                            В случае если в модуле баллы вычитаются, а команда дала неправильный ответ, 
+                            отрицательные баллы так же кратно умножаются.
+                        </p>
+                    </div>
+                </div><!-- /.mechanic-item -->
+
+                <span class="mechanic-additional">
+                    Для ряда квизов по согласованию с Заказчиком также применяются дополнительные апы:
+                </span>
+
+                <div class="mechanic-item mechanic-item_yellow">
+                    <div class="mechanic-item__image">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/mechanic/red.svg" alt="sticker">
+                    </div>
+                    <div class="mechanic-item__text">
+                        <strong>«Мультипликатор х2»: 3 шт. в комплекте.</strong>
+                        <p>«Вошёл в образ +5 баллов».
+                            Для тематических квизов очень важна атмосфера, потому такие апы можно выдавать
+                             каждому, кто пришёл на квиз в тематическом костюме (например, в костюме волшебника
+                              для квиза по Гарри Поттеру).
+                            Если в команде несколько человек приходят в костюмах, этот ап может сыграть решающую
+                             роль, так как выдаётся каждому игроку в образе.
+                        </p>
+                    </div>
+                </div><!-- /.mechanic-item -->
+                <div class="mechanic-item mechanic-item_yellow">
+                    <div class="mechanic-item__image">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/mechanic/green.svg" alt="sticker">
+                    </div>
+                    <div class="mechanic-item__text">
+                        <strong>«Мультипликатор х2»: 3 шт. в комплекте.</strong>
+                        <p>«За пунктуальность +5 баллов».
+                            Для мероприятий, которые важно начинать вовремя, можно применять данный ап,
+                             выдавая по наклейке каждому пришедшему за 10 минут до начала игроку.
+                        </p>
+                    </div>
+                </div><!-- /.mechanic-item -->
+                <div class="mechanic-item mechanic-item_yellow">
+                    <div class="mechanic-item__image">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/mechanic/yellow.svg" alt="sticker">
+                    </div>
+                    <div class="mechanic-item__text">
+                        <strong>«Мультипликатор х2»: 3 шт. в комплекте.</strong>
+                        <p>«Ранние пташки х3»
+                            На некоторых мероприятиях, где важно заранее понимать по числу участников или повысить конверсию в доходимость после регистрации, мы можем сделать 1 или 2 предварительных вопроса, высылаемых, например, после регистрации и за несколько дней до игры.
+                            Команды, корректно ответившие на предварительные вопросы, получат 1 или 2 дополнительные наклейки мультипликатора на команду.
+                        </p>
+                    </div>
+                </div><!-- /.mechanic-item -->
+                
+            </div><!-- /.mechanic-list -->
+
+
+        </div>
+    </div>
+</section>
