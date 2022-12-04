@@ -53,21 +53,21 @@
                                 В обычный будний день стоимость ведущего начинается от 6.000 рублей за 2 часа работы. При необходимости тематических костюмов стоимость вырастает.
                                </p> 
                             </div>
-                            <div class="description-item__price">от 6.000&nbsp;руб.</div>
+                            <a href="#callback" class="description-item__price">от 6.000&nbsp;руб.</a>
                         </li><!-- /.description-item -->
                         <li class="description-item">
                             <div class="description-item__image">
                                 <img src="<?= get_template_directory_uri() ?>/assets/img/pricing/km.svg" alt="ведущий">
                             </div>
-                            <div class="description-item__text">
+                            <a href="#callback" class="description-item__text">
                                <p>
                                 <strong> Квиз-мены </strong><br>
                                 Для динамичного проведения квиза необходимы квиз-мены – энергичные ребята и девчонки, которые будут собирать бланки со столов и следить за порядком.
                                 Один квиз-мен обычно сопровождает до 7 команд. Чем больше команд, тем больше квиз-менов нужно.
                                 Стоимость зависит от даты проведения квиза, но, как правило, начинается от 3.000 за 2 часа работы одного квиз-мена. При необходимости тематических костюмов стоимость вырастает.
                                </p> 
-                            </div>
-                            <div class="description-item__price">от 3.000&nbsp;руб.</div>
+                            </a>
+                            <a href="#callback" class="description-item__price">от 3.000&nbsp;руб.</a>
                         </li><!-- /.description-item -->
                         <li class="description-item">
                             <div class="description-item__image">
@@ -81,7 +81,7 @@
                                 Стоимость зависит от даты проведения квиза, но, как правило, начинается от 4.000 за 2 часа работы одного человека.
                                 </p> 
                             </div>
-                            <div class="description-item__price">от 4.000&nbsp;руб.</div>
+                            <a href="#callback" class="description-item__price">от 4.000&nbsp;руб.</a>
                         </li><!-- /.description-item -->
                         <li class="description-item">
                             <div class="description-item__image">
@@ -94,7 +94,7 @@
                                 Стоимость косплееров очень сильно зависит от даты проведения квиза и качества костюма, обычно начинается от 3.000 за 2 часа работы одного косплеера.
                                 </p> 
                             </div>
-                            <div class="description-item__price">от 3.000&nbsp;руб.</div>
+                            <a href="#callback" class="description-item__price">от 3.000&nbsp;руб.</a>
                         </li><!-- /.description-item -->
                         <li class="description-item">
                             <div class="description-item__image">
@@ -103,12 +103,11 @@
                             <div class="description-item__text">
                                <p>
                                 <strong> Банкет / фуршет / аренда площадки </strong><br>
-                                Банкет / фуршет / аренда площадки
-                                Если Вы не знаете где провести квиз, мы можем подобрать для Вас подходящую площадку и обеспечить питанием. 
+                                Если Вы не знаете где провести квиз, мы можем подобрать для Вас подходящую площадку и обеспечить питанием.
                                 Здесь вариантов существует очень много, потому невозможно указать какую-то стартовую стоимость. Уточните у менеджера детали.
                                 </p> 
                             </div>
-                            <div class="description-item__price">Индивидуально</div>
+                            <a href="#callback" class="description-item__price">Индивидуально</a>
                         </li><!-- /.description-item -->
                         <li class="description-item">
                             <div class="description-item__image">
@@ -121,7 +120,7 @@
                                 но она не оборудована телевизорами и аудио-аппаратурой, необходимой для квиза, мы можем привезти всё с собой. Уточните детали у менеджера.
                                 </p> 
                             </div>
-                            <div class="description-item__price">Индивидуально</div>
+                            <a href="#callback" class="description-item__price">Индивидуально</a>
                         </li><!-- /.description-item -->
                         <li class="description-item">
                             <div class="description-item__image">
@@ -136,7 +135,7 @@
                                 Сообщите свои пожелания менеджеру, и мы будем рады Вам помочь.
                                 </p> 
                             </div>
-                            <div class="description-item__price">Индивидуально</div>
+                            <a href="#callback" class="description-item__price">Индивидуально</a>
                         </li><!-- /.description-item -->
                     </ul><!-- /.description-list -->
                 </li><!-- /.pricing-list__item -->

@@ -69,7 +69,11 @@
         }
 
         &__photo {
-            padding-bottom: 30px;            
+            margin-bottom: 30px;
+            width: 166px;
+            height: 166px;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
         &__description {

@@ -14,41 +14,34 @@
                     </p><!-- /.testimonials-description__text -->
                 </div><!-- /.testimonials-description -->
 
+                <?php //собираем посты по типу
+                    $thisPostId = get_the_ID();
+                    $posts = get_posts(array(
+                        'numberposts' => 100,
+                        'post_type' => 'testimonials',
+                        'orderby' => 'id',
+                        'order' => 'ASC',
+                        'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+                    ));
+                ?>
+
                 <div class="tesimonials-slider swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="testimonials-slide">
-                                <img src="<?= get_template_directory_uri() ?>/assets/img/testimonial-empty.webp" alt="photo" class="testimonials-slide__photo">
-                                <p class="testimonials-slide__description">
-                                    Мы провели более 100 квизов на самые разные темы, от сериала «Секс в большом городе» для
-                                    девушек с коктейлями Космополитан, до отраслевой игры на тему «Нефтепереработка» для суровых
-                                    сибирских нефтяников, и к каждому квизу подходили с максимальным вниманием и ответственностью.
-                                    Нам всегда приятно, когда игры вызывают живые эмоции и восторг участников. 
-                                </p>
-                            </div><!-- /.testimonials-slide -->
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testimonials-slide">
-                                <img src="<?= get_template_directory_uri() ?>/assets/img/testimonial-empty.webp" alt="photo" class="testimonials-slide__photo">
-                                <p class="testimonials-slide__description">
-                                    Мы провели более 100 квизов на самые разные темы, от сериала «Секс в большом городе» для
-                                    девушек с коктейлями Космополитан, до отраслевой игры на тему 
-                                </p>
-                            </div><!-- /.testimonials-slide -->
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testimonials-slide">
-                                <img src="<?= get_template_directory_uri() ?>/assets/img/testimonial-empty.webp" alt="photo" class="testimonials-slide__photo">
-                                <p class="testimonials-slide__description">
-                                    Мы провели более 100 квизов на самые разные темы, от сериала «Секс в большом городе» для
-                                    девушек с коктейлями Космополитан, до отраслевой игры на тему «Нефтепереработка» для суровых
-                                    сибирских нефтяников, и к каждому квизу подходили с максимальным вниманием и ответственностью.
 
-                                </p>
-                            </div><!-- /.testimonials-slide -->
-                        </div>
+                        <?php foreach ($posts as $post) { setup_postdata($post); ?>
+
+                            <div class="swiper-slide">
+                                <div class="testimonials-slide">
+                                    <img src="<?= the_field('testimonial-image')?>" alt="<?= the_title() ?>" class="testimonials-slide__photo">
+                                    <p class="testimonials-slide__description">
+                                        <?= the_field('testimonial-text')?>
+                                    </p>
+                                </div><!-- /.testimonials-slide -->
+                            </div><!-- /.swiper-slide -->
+
+                        <?php } wp_reset_postdata(); // сброс постов ?>
 
                     </div>
                         <!-- If we need navigation buttons -->

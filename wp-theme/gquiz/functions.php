@@ -183,6 +183,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Post type Gallery.
  */
 require get_template_directory() . '/post-types/post-gallery.php';
+/**
+ * Post type Testimonials.
+ */
+require get_template_directory() . '/post-types/post-testimonials.php';
 
 
 

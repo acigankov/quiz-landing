@@ -2,6 +2,8 @@
     <div class="container">
         <div class="section-white">
 
+            <?php var_dump(mail("acigankov@inbox.ru","Test","Test")); ?>
+
             <div class="black-heading">
                 <h1 class="black-heading__title">
                     Наши квизы - это всегда яркое и незабываемое событие.</br>

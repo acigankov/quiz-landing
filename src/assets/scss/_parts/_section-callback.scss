@@ -68,7 +68,7 @@
         }
     }
 
-    button[type=submit] {
+    input[type=submit] {
         @include flex;
         height: 40px;
         max-width: 250px;
@@ -90,11 +90,16 @@
         }
     }
 
-    &-message {
+    &-message, .wpcf7 form .wpcf7-response-output,  {
         @include flex;
         width: 100%;
         text-align: center;
         @include font('Roboto-Bold', normal, 1.1rem, $color-dark);
         padding: 0 20px 60px;
+        border: none;
+    }
+
+    .wpcf7 form.sent .wpcf7-response-output {
+        border:none;
     }
 }
