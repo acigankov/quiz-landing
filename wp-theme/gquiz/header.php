@@ -36,7 +36,7 @@
                 <div class="header-socials">
                     <ul class="header-icons">
                         <li class="header-icons__item">
-                            <a href="#">
+                            <a href="https://t.me/+0-3EfQxGSRA3MGQy" target="_blank">
                                 <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -46,7 +46,7 @@
                             </a>
                         </li>
                         <li class="header-icons__item">
-                            <a href="#">
+                            <a href="https://vk.com/gvozdiquiz" target="_blank">
                                 <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -87,7 +87,7 @@
                         <div class="header-socials header-socials_mobile">
                             <ul class="header-icons">
                                 <li class="header-icons__item">
-                                    <a href="#">
+                                    <a href="https://t.me/+0-3EfQxGSRA3MGQy" target="_blank">
                                         <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -97,7 +97,7 @@
                                     </a>
                                 </li>
                                 <li class="header-icons__item">
-                                    <a href="#">
+                                    <a href="https://vk.com/gvozdiquiz" target="_blank">
                                         <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink"
